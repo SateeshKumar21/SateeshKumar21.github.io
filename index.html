@@ -44,23 +44,23 @@
             </td>
           </tr>
         </tbody></table>
-        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
+              <heading>Publications and Preprints</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
+                Papers are in reverse chronological order. '*' denotes equal contribution.
               </p>
             </td>
           </tr>
-        </tbody></table> -->
+        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr onmouseout="malle_stop()" onmouseover="malle_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='malle_image'>
-                  <img src='images/Corl_Fig_teaser.png' width="170"></div>
-                <img src='images/Corl_Fig_teaser.png' width="170">
+                  <img src='images/graphirl-preview.gif' width="170"></div>
+                <img src='images/graphirl-preview.gif' width="170">
               </div>
               <script type="text/javascript">
                 function malle_start() {
@@ -74,21 +74,25 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2105.13353.pdf">
-                <papertitle>Inverse Reinforcement Learning from Diverse Third-Person Videos via Graph Abstraction</papertitle>
+              <a href="https://arxiv.org/pdf/2207.14299.pdf">
+                <papertitle>Graph Inverse Reinforcement Learning from Diverse Videos</papertitle>
               </a>
               <br>
               <strong>Sateesh Kumar</strong>,
-              <a href="https://jonzamora.dev/">Jonathan Zamora</a>,
-              <a href="https://nicklashansen.github.io/">Nicklas Hansen</a>, 
+              <a href="https://jonzamora.dev/">Jonathan Zamora*</a>,
+              <a href="https://nicklashansen.github.io/">Nicklas Hansen*</a>, 
               <a href="https://jangirrishabh.github.io/">Rishabh Jangir</a>,
               <a href="https://xiaolonw.github.io/group.html">Xiaolong Wang</a>
               <br>
               <em>Under Review</em>, 2022
               <br>
-              <a href="https://arxiv.org/pdf/2105.13353.pdf">arXiv</a>
+              <a href="https://sateeshkumar21.github.io/GraphIRL/">project page</a>
+              /
+              <a href="https://arxiv.org/pdf/2105.13353.pdf">arXiv</a> 
               <p></p>
               <p>
+              GraphIRL is a self-supervised method for learning a task reward solely from videos. 
+              We build an object-centric graph abstraction from video demonstrations and then learn an embedding space that captures task progression in a self-supervised manner by exploiting the temporal cue in the videos.
               </p>
             </td>
 
@@ -128,9 +132,13 @@
               <br>
               <em>CVPR</em>, 2022
               <br>
+              <a href="https://retrocausal.ai/unsupervised">project page</a>
+              /
               <a href="https://arxiv.org/pdf/2105.13353.pdf">arXiv</a>
               <p></p>
               <p>
+                We propose temporal optimal transport for jointly learning representations and performing online clustering in an unsupervised manner.
+                The approach learns prototype vectors via backpropogation. The prototype vectors are initialized at random and act as cluster centroids. 
               </p>
             </td>
 
@@ -170,14 +178,63 @@
               <br>
               <em>CVPR</em>, 2021
               <br>
+              <a href="https://retrocausal.ai/alignment">project page</a>
+              /
               <a href="https://arxiv.org/abs/2103.17260">arXiv</a>
               <p></p>
               <p>
+                We propose alignment as pre-text task for self-supervised video representation learning. 
+                The proposed approach leverages differentiable dynamic time warping for learning global alignment across pairs of videos.
               </p>
             </td>
 
             
           </tr>
+
+          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='images/iv20.gif' width="170"></div>
+                <img src='images/iv20.gif' width="170">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2004.05261.pdf">
+                <papertitle>Towards Anomaly Detection in Dashcam Videos</papertitle>
+              </a>
+              <br>
+              <strong>Sateesh Kumar*</strong>,
+              <a href="https://scholar.google.com/citations?user=boFO-7gAAAAJ&hl=en">Sanjay Haresh*</a>,
+              <a href="http://www.zeeshanzia.com/">M. Zeeshan Zia</a>
+              <a href="https://cs.adelaide.edu.au/~huy/home.php">Quoc-Huy Tran</a>
+              <br>
+              <em>IV</em>, 2020
+              <br>
+              <a href="https://www.youtube.com/watch?v=bnzCsO6WL0w">talk</a>
+              /
+              <a href="https://arxiv.org/pdf/2004.05261.pdf">arXiv</a>
+              <p></p>
+              <p>
+                We collect a video dataset of road-based anomalies. We propose an object-object interaction reasoning approach for detecting anomalies without additional supervision.
+                We experiment with reconstruction based and one-class classification based approaches.
+              </p>
+            </td>
+
+            
+          </tr>
+
+
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr>
