@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Sateesh Kumar</name>
               </p>
-              <p>I am a CS Ph.D. student at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, advised by <a href="https://robertomartinmartin.com/">Prof. Roberto Martín-Martín </a> and <a href="https://geopavlakos.github.io/"> Prof. Georgios Pavlakos</a>.  My research focuses on the intersection of Robotics and Computer Vision. I I hold a Master's degree from <a href="https://ucsd.edu"> The University of California, San Diego</a> where I was advised by <a href= "https://xiaolonw.github.io/group.html">Prof. Xiaolong Wang</a> and a Bachelor's degree from <a href="https://www.nu.edu.pk/">FAST NUCES</a> Karachi.
+              <p>I am a second year Computer Science PhD student at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, advised by <a href="https://robertomartinmartin.com/">Prof. Roberto Martín-Martín </a> and <a href="https://geopavlakos.github.io/"> Prof. Georgios Pavlakos</a>.  My research focuses on the intersection of Robotics and Computer Vision. I I hold a Master's degree from <a href="https://ucsd.edu"> The University of California, San Diego</a> where I was advised by <a href= "https://xiaolonw.github.io/group.html">Prof. Xiaolong Wang</a> and a Bachelor's degree from <a href="https://www.nu.edu.pk/">FAST NUCES</a> Karachi.
               </p> 
               <p> In addition to my academic pursuits, I have gained industry experience as a Generative AI Researcher at TikTok and as a Computer Vision Research Engineer at <a  href="https://retrocausal.ai/"">Retrocausal</a>.
               </p>
@@ -46,7 +46,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Publications and Preprints</heading>
               <p>
-                Papers are in reverse chronological order. '*' denotes equal contribution.
+                *: Equal Contribution.  †: Equal Advising.
               </p>
             </td>
           </tr>
@@ -56,8 +56,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='malle_image'>
-                  <img src='images/COLLAGE_teaser.png' width="170"></div>
-                <img src='images/COLLAGE_teaser.png' width="170">
+                  <img src='images/collage_overview.gif' width="220"></div>
+                <img src='images/collage_overview.gif' width="220">
               </div>
               <script type="text/javascript">
                 function malle_start() {
@@ -75,14 +75,14 @@
   <!-- <div style="font-size:12px; font-weight:bold; color:green; margin-bottom:4px;"> -->
     <!-- NEW
   </div> -->
-              <a href="https://arxiv.org/pdf/2207.14299.pdf">
+              <a href="https://arxiv.org/pdf/2508.01131.pdf">
                 <papertitle>COLLAGE: Adaptive Fusion-based Retrieval for Augmented Policy Learning</papertitle>
               </a>
               <br>
-              <strong>Sateesh Kumar</strong>,
+              <strong>Sateesh Kumar</strong>, 
               <a href="https://shivindass.github.io/">Shivin Dass</a>,
-              <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a>, 
-              <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>,
+                <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a><sup>†</sup>, 
+                <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a><sup>†</sup>,
               <br>
               <em>Conference on Robot Learning (CoRL) </em>, 2025
               <br>
@@ -91,13 +91,58 @@
               <a href="https://arxiv.org/abs/2508.01131">arXiv</a> 
               <p></p>
               <p>
-                We introduce COLLAGE, a retrieval-based approach that adaptively fuses diverse data modalities to enhance policy learning. 
-
+                COLLAGE is a few-shot imitation learning method that adaptively fuses demonstrations from multiple similarity modalities. It estimates each modality’s usefulness by training a policy on its retrieved data and measuring how probable the target actions are under that policy. 
               </p>
             </td>
 
             
           </tr>
+
+             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='images/MLM_teaser.png' width="170"></div>
+                <img src='images/MLM_teaser.png' width="170">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2309.15954.pdf">
+                <papertitle>Finetuned Multimodal Language Models Are
+High-Quality Image-Text Data Filters</papertitle>
+              </a>
+              <br>
+              <a href="https://victorwz.github.io">Weizhi Wang</a>,
+              <a href="https://khalilmrini.github.io/">Khalil Mrini</a>,
+              <a href="https://sites.google.com/site/linjieyang89/">Linjie Yang</a>,
+              <strong>Sateesh Kumar</strong>,
+              <a href="">Xifeng Yan</a>
+              <a href="https://hengcv.github.io/">Heng Wang</a>,
+              <br>
+              <em>arxiv </em>, 2024
+              <br>
+        
+                <a href="https://mlm-filter.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/pdf/2403.02677.pdf">arXiv</a> 
+              
+              <p></p>
+              <p>
+                This paper introduces a method that uses finetuned multimodal language models to filter image–text pairs more accurately than traditional metrics like CLIPScore. It defines multiple specialized quality metrics and builds instruction tuning data guided by stronger models such as GPT-4 to train the models to score data effectively. The result is a reliable and efficient filter that better evaluates image–text alignment.
+              </p>
+            </td>            
+          </tr>
+
 
           <tr onmouseout="malle_stop()" onmouseover="malle_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
