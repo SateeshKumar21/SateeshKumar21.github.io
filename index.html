@@ -20,7 +20,7 @@
               <p style="text-align:center">
                 <name>Sateesh Kumar</name>
               </p>
-              <p>I am a second year Computer Science PhD student at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>, advised by <a href="https://robertomartinmartin.com/">Prof. Roberto Martín-Martín </a> and <a href="https://geopavlakos.github.io/"> Prof. Georgios Pavlakos</a>.  My research focuses on the intersection of Robotics and Computer Vision. I am currently interning at <a href="https://www.amazon.science/robotics">Amazon Fauna Robotics</a> (Bellevue), mentored by <a href="https://scholar.google.com/citations?user=nvQampwAAAAJ&hl=en">Cheng-Hao Kuo</a> and <a href="https://scholar.google.com/citations?user=QLFhfn0AAAAJ&hl=en">Sadegh Rabiee</a>. I hold a Master's degree from <a href="https://ucsd.edu"> The University of California, San Diego</a> where I was advised by <a href= "https://xiaolonw.github.io/group.html">Prof. Xiaolong Wang</a> and a Bachelor's degree from <a href="https://www.nu.edu.pk/">FAST NUCES</a> Karachi.
+              <p>I am a second year Computer Science PhD student at <a href="https://www.utexas.edu/">The University of Texas at Austin</a>.  My research focuses on the intersection of Robotics and Computer Vision. I am currently interning at <a href="https://www.amazon.science/robotics">Amazon Fauna Robotics</a> (Bellevue), mentored by <a href="https://scholar.google.com/citations?user=nvQampwAAAAJ&hl=en">Cheng-Hao Kuo</a> and <a href="https://scholar.google.com/citations?user=QLFhfn0AAAAJ&hl=en">Sadegh Rabiee</a>. I hold a Master's degree from <a href="https://ucsd.edu"> The University of California, San Diego</a> where I was advised by <a href= "https://xiaolonw.github.io/group.html">Prof. Xiaolong Wang</a> and a Bachelor's degree from <a href="https://www.nu.edu.pk/">FAST NUCES</a> Karachi.
               </p> 
               <p> In addition to my academic pursuits, I have gained industry experience as a Research Intern at <a href="https://www.amazon.science/robotics">Amazon Fauna Robotics</a> (Bellevue), mentored by <a href="https://scholar.google.com/citations?user=nvQampwAAAAJ&hl=en">Cheng-Hao Kuo</a> and <a href="https://scholar.google.com/citations?user=QLFhfn0AAAAJ&hl=en">Sadegh Rabiee</a>, as a Generative AI Researcher at TikTok, and as a Computer Vision Research Engineer at <a href="https://retrocausal.ai/">Retrocausal</a>.
               </p>
@@ -71,6 +71,82 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="momasplat_stop()" onmouseover="momasplat_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='momasplat_image'>
+                  <img src='images/MoMaSplat_teaser.gif' width="200"></div>
+                <img src='images/MoMaSplat_teaser.gif' width="200">
+              </div>
+              <script type="text/javascript">
+                function momasplat_start() {
+                  document.getElementById('momasplat_image').style.opacity = "1";
+                }
+                function momasplat_stop() {
+                  document.getElementById('momasplat_image').style.opacity = "0";
+                }
+                momasplat_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://momasplat.github.io/">
+                <papertitle>MoMaSplat: Dynamic Novel-View Demonstration Augmentation for Mobile Manipulation</papertitle>
+              </a>
+              <br>
+              <strong>Sateesh Kumar</strong>*,
+              <a href="https://www.linkedin.com/in/arnav-balaji-402ba2280/">Arnav Balaji</a>*,
+              <a href="https://arpitrf.github.io/">Arpit Bahety</a>,
+              <a href="https://pvskand.github.io/">Skand Peri</a>,
+              <a href="https://geopavlakos.github.io/">Georgios Pavlakos</a>,
+              <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>
+              <br>
+              <em>Under Review</em>, 2026
+              <br>
+              <a href="https://momasplat.github.io/">project page</a>
+              <p></p>
+              <p>
+                MoMaSplat is a demonstration augmentation framework for mobile manipulation that synthesizes full manipulation trajectories, including the moving object, from unseen robot base poses. It reconstructs the scene and manipulated object using 3D Gaussian Splatting and feed-forward 3D foundation models, and retargets actions via kinematics, enabling policies to succeed from base poses beyond 25 cm where all baselines fail.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="compass_stop()" onmouseover="compass_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='compass_image'>
+                  <img src='images/COMPASS_teaser.gif' width="200"></div>
+                <img src='images/COMPASS_teaser.gif' width="200">
+              </div>
+              <script type="text/javascript">
+                function compass_start() {
+                  document.getElementById('compass_image').style.opacity = "1";
+                }
+                function compass_stop() {
+                  document.getElementById('compass_image').style.opacity = "0";
+                }
+                compass_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>COMPASS: Uncertainty-Guided Competence-Aware Base Pose Selection for VLAs via Gaussian Splatting</papertitle>
+              <br>
+              <strong>Sateesh Kumar</strong>,
+              <a href="https://scholar.google.com/citations?user=QLFhfn0AAAAJ&hl=en">Sadegh Rabiee</a>,
+              Shubham Kumar,
+              Zheming Zhou,
+              Yuyin Sun,
+              <a href="https://aliensunmin.github.io/">Min Sun</a>,
+              <a href="https://scholar.google.com/citations?user=nvQampwAAAAJ&hl=en">Cheng-Hao Kuo</a>,
+              <a href="https://robertomartinmartin.com/">Roberto Martín-Martín</a>
+              <br>
+              <em>Under Review</em>, 2026
+              <p></p>
+              <p>
+                COMPASS selects base poses for deploying VLA policies on mobile manipulators by using the policy's own predictive uncertainty as a measure of competence. It renders candidate observations from a 3D Gaussian Splatting reconstruction of the scene and picks the pose where an ensemble of VLA checkpoints agrees most, outperforming the strongest baseline by 35 percentage points on a real-world humanoid without needing training data or execution labels.
+              </p>
+            </td>
+          </tr>
+
                     <tr onmouseout="malle_stop()" onmouseover="malle_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
